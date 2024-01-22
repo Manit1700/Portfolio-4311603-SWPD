@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&family=Indie+Flower&family=Rock+Salt&family=Shrikhand&display=swap');
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+
+  .header .logo{
+    font-size: 25px;
+    font-family: 'Fredoka One', cursive;
+    color: #ff00ff;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin-right: 20px;
+  }
+
+  .nav-items a {
+    text-decoration: none;
+    color: #000;
+    padding: 35px 20px;
+    position: relative;
+  }
+  
+  .nav-items a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 30px;
+    left: 0;
+    background-color: #ff00ff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+  }
+  
+  .nav-items a:hover::before {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+  }  
+  
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(75, 75, 75, 0.5) 0%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+
+  .animate-fade-in-active {
+    animation: fade-in 1s ease-in-out forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .intro h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+
+  .intro p {
+    font-size: 20px;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .achievements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 80px;
+    opacity: 0;
+  }
+
+  .animate-slide-up-active {
+    animation: slide-up 1s ease-in-out forwards;
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .achievements .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .achievements .work i {
+    width: fit-content;
+    font-size: 50px;
+    color: #ff00ff;
+    border-radius: 50%;
+    border: 2px solid #ff00ff;
+    padding: 12px;
+  }
+
+  .achievements .work .work-heading {
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .achievements .work .work-text {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    border-top: 2px solid #eeeeee;
+    opacity: 0;
+  }
+
+  .about-me img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .about-me-text {
+    text-align: center;
+  }
+
+  .about-me-text h2 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .about-me-text a {
+    text-decoration: none;
+    color: #000;
+    padding: 35px 20px;
+    position: relative;
+  }
+  
+  .about-me-text a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 30px;
+    left: 0;
+    background-color: #ff00ff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+  }
+  
+  .about-me-text a:hover::before {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+  } 
+
+  .about-me-text p {
+    font-size: 20px;
+    color: #585858;
+    margin: 10px 0;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #49494f;
+    padding: 40px 80px;
+  }
+
+  .footer .copy {
+    color: #ffffff;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+  }
+
+  .bottom-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .bottom-links .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .bottom-links .links a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .bottom-links .links span {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .bottom-links .links a {
+    text-decoration: none;
+    color: #a1a1a1;
+    padding: 10px 20px;
+  }

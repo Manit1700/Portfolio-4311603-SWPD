@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form(Inline)</title>
+        <style>
+            form{text-align: left;}
+            button:hover{cursor: pointer; background-color: rgb(45, 255, 63);}
+            input{margin: auto; outline: none; padding: 0.5em; border: none; background-color: rgb(225, 225, 225); border-radius: 0.25em; color: black;}
+            button{margin: auto; outline: none; padding: 0.5em; border: none; background-color: rgb(232, 67, 38); border-radius: 0.25em; color: black;}
+            select{margin: auto; outline: none; padding: 0.5em; border: none; background-color: rgb(225, 225, 225); border-radius: 0.25em; color: black;}
+        </style>
+    </head>
+    <body style="background-color:rgb(194, 91, 201) ;">
+        <h1 style="text-align: center; color: rgb(0, 255, 38);">Feedback Form(Inline)</h1>
+        <form action="/feedback" method="post">
+            <label for="name" >Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="program">Program</label>
+            <select id="program" name="program" required>
+             <option value="">Select</option>
+             <option value="">Computer Engg.</option>
+             <option value="">Mechanical</option>
+             <option value="">Electrical</option>
+             <option value="">IT</option>
+             <option value="">Printing Textile</option>
+             <option value="">Automobile</option>
+            </select><br><br>
+
+            <label for="facult" >Faculty Name:</label>
+            <input type="text" id="facult" name="facult" required><br><br>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+             <option value="">Select</option>
+             <option value="">Maths</option>
+             <option value="">BOOP</option>
+             <option value="">SWPD</option>
+             <option value="">ECW</option>
+             <option value="">DE</option>
+             <option value="">Physics</option>
+            </select><br><br>
+
+            <label>
+                Registration No:
+            </label>
+            <input type="text" name="subscript" value="226400307" size="9"/>
+            <input type="text" name="superscript" size="3" /><br><br>
+
+            <label for="semester">Semester:</label>
+            <input type="number" id="semester" name="semester" min="1" max="6" required><br><br>
+
+            <label for="program">Rate:</label>
+            <select id="program" name="program" required>
+             <option value="">Select</option>
+             <option value=""> Very Good</option>
+             <option value="">Good</option>
+             <option value="">Average</option>
+             <option value="">Below Average</option>
+             <option value="">Bad</option>
+             <option value="">Very Bad</option>
+            </select><br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="Feedback" rows="4" cols="50"></textarea><br><br>
+
+            <button onclick="alert('Your Responce Has Been Recorded')">Submit</button>
+            <input type="reset" value="Reset">
+
+        </form>
+    </body>
+</html>

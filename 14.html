@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vowel or Consonant Checker</title>
+  <script>
+    function checkCharacter() {
+      var character = document.getElementById('character').value.toLowerCase();
+
+      if (character === 'a' || character === 'e' || character === 'i' || character === 'o' || character === 'u') {
+        document.getElementById('result').innerHTML = "The character is a vowel.";
+      } else {
+        document.getElementById('result').innerHTML = "The character is a consonant.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Vowel or Consonant Checker</h1>
+
+  <label for="character">Enter a character:</label>
+  <input type="text" id="character">
+
+  <br><br>
+
+  <button onclick="checkCharacter()">Check</button>
+
+  <p id="result"></p>
+</body>
+</html>

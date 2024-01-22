@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form(External)</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <h1>Feedback Form (External)</h1>
+        <form action="/feedback" method="post">
+            <label for="name" >Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="program">Program</label>
+            <select id="program" name="program" required>
+             <option value="">Select</option>
+             <option value="">Computer Engg.</option>
+             <option value="">Mechanical</option>
+             <option value="">Electrical</option>
+             <option value="">IT</option>
+             <option value="">Printing Textile</option>
+             <option value="">Automobile</option>
+            </select><br><br>
+
+            <label for="facult" >Faculty Name:</label>
+            <input type="text" id="facult" name="facult" required><br><br>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+             <option value="">Select</option>
+             <option value="">Maths</option>
+             <option value="">BOOP</option>
+             <option value="">SWPD</option>
+             <option value="">ECW</option>
+             <option value="">DE</option>
+             <option value="">Physics</option>
+            </select><br><br>
+
+            <label>
+                Registration No:
+            </label>
+            <input type="text" name="subscript" value="226400307" size="9"/>
+            <input type="text" name="superscript" size="3" /><br><br>
+
+            <label for="semester">Semester:</label>
+            <input type="number" id="semester" name="semester" min="1" max="6" required><br><br>
+
+            <label for="program">Rate:</label>
+            <select id="program" name="program" required>
+             <option value="">Select</option>
+             <option value=""> Very Good</option>
+             <option value="">Good</option>
+             <option value="">Average</option>
+             <option value="">Below Average</option>
+             <option value="">Bad</option>
+             <option value="">Very Bad</option>
+            </select><br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="Feedback" rows="4" cols="50"></textarea><br><br>
+
+            <button onclick="alert('Your Responce Has Been Recorded')">Submit</button>
+            <input type="reset" value="Reset">
+
+        </form>
+    </body>
+</html>

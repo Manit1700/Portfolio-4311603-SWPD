@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kevin's Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Kevin Parry</a>
+    <nav class="nav-items">
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">My Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="intro animate-fade-in">
+    <h1>Welcome to Kevin's Website</h1>
+    <p>Get ready for some fun!</p>
+  </section>
+
+  <section class="achievements">
+    <div class="work">
+      <i class="fas fa-rocket"></i>
+      <div class="work-heading">Fast & Efficient</div>
+      <div class="work-text">We deliver quick and efficient results.</div>
+    </div>
+    <div class="work">
+      <i class="fas fa-lightbulb"></i>
+      <div class="work-heading">Creative Ideas</div>
+      <div class="work-text">We come up with innovative and creative ideas.</div>
+    </div>
+    <div class="work">
+      <i class="fas fa-heart"></i>
+      <div class="work-heading">Passionate Team</div>
+      <div class="work-text">Our team is passionate about what we do.</div>
+    </div>
+  </section>
+
+  <section class="about-me animate-slide-up">
+    <img src="profile.jpg" alt="About Me">
+    <div class="about-me-text">
+      <h2>About Me</h2>
+      <p>I'm a web developer with a passion for creating awesome websites. To know more about me:</p>
+      <a href="about.html">Click Me!</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="copy">© 2023 All rights reserved.</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>Links</span>
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">My Work</a>
+      </div>
+      <div class="links">
+        <span>Social Media</span>
+        <a href="https://www.facebook.com/kevinbparry/">Facebook</a>
+        <a href="https://twitter.com/kevinbparry?lang=en">Twitter</a>
+        <a href="https://www.instagram.com/kevinbparry/">Instagram</a>
+      </div>
+      <div class="links">
+        <span>Contact</span>
+        <a href="contact.html">Contact Me!</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function animateOnScroll() {
+      const introSection = document.querySelector('.intro');
+      const achievementsSection = document.querySelector('.achievements');
+      const aboutMeSection = document.querySelector('.about-me');
+    
+      const introSectionOffsetTop = introSection.offsetTop;
+      const achievementsSectionOffsetTop = achievementsSection.offsetTop;
+      const aboutMeSectionOffsetTop = aboutMeSection.offsetTop;
+    
+      const scrollPosition = window.scrollY + window.innerHeight;
+    
+      if (scrollPosition > introSectionOffsetTop + 200) {
+        introSection.classList.add('animate-fade-in-active');
+      }
+    
+      if (scrollPosition > achievementsSectionOffsetTop + 200) {
+        achievementsSection.classList.add('animate-slide-up-active');
+      }
+    
+      if (scrollPosition > aboutMeSectionOffsetTop + 200) {
+        aboutMeSection.classList.add('animate-slide-up-active');
+      }
+    }
+    
+    window.addEventListener('scroll', animateOnScroll);
+  </script>
+</body>
+</html>

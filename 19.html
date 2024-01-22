@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum of Numbers</title>
+  <script>
+    function calculateSum(n) {
+      var sum = 0;
+      for (var i = 1; i <= n; i++) {
+        sum += i;
+      }
+      return sum;
+    }
+
+    function calculateAndDisplaySum() {
+      var number = parseInt(document.getElementById('number').value);
+      var sum = calculateSum(number);
+      document.getElementById('result').innerHTML = "Sum: " + sum;
+    }
+  </script>
+</head>
+<body>
+  <h1>Sum of Numbers</h1>
+
+  <label for="number">Enter a number:</label>
+  <input type="text" id="number">
+
+  <br><br>
+
+  <button onclick="calculateAndDisplaySum()">Calculate Sum</button>
+
+  <br><br>
+
+  <div id="result"></div>
+</body>
+</html>

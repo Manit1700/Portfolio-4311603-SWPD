@@ -1,0 +1,8 @@
+body{background-color:teal ;}
+form{text-align: left;}
+h1{text-align: center;}
+button{padding: auto; border: none; outline: none; background-color: darkorchid; color: white; border-radius: 0.25em;}
+button:hover{cursor: pointer; background-color: rgb(41, 4, 164);}
+input{margin: auto; outline: none; padding: 0.5em; border: none; background-color: rgb(225, 225, 225); border-radius: 0.25em; color: black;}
+button{margin: auto; outline: none; padding: 0.5em; border: none; background-color: darkorchid; border-radius: 0.25em; color: black;}
+select{margin: auto; outline: none; padding: 0.5em; border: none; background-color: rgb(225, 225, 225); border-radius: 0.25em; color: black;}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print First 10 Even Numbers</title>
+  <script>
+    function printEvenNumbers() {
+      var count = 0;
+      var number = 2;
+      var output = "";
+
+      while (count < 10) {
+        output += number + " ";
+        number += 2;
+        count++;
+      }
+
+      document.getElementById('result').innerHTML = output;
+    }
+  </script>
+</head>
+<body>
+  <h1>Print First 10 Even Numbers</h1>
+
+  <button onclick="printEvenNumbers()">Print Even Numbers</button>
+
+  <p id="result"></p>
+</body>
+</html>

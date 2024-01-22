@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+</head>
+<body>
+  <h1>Student Registration Form</h1>
+  <form action="/register" method="post">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required><br>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required><br>
+
+    <label for="mname">Middle Name</label>
+    <input type="text" id="mname" name="mname" required><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100" required><br>
+
+    <label for="course">Course</label>
+    <select id="course" name="course" required>
+      <option value="">Select</option>
+      <option value="male">Computer Engg.</option>
+      <option value="female">Mechanical</option>
+      <option value="other">Electrical</option>
+      <option value="other">IT</option>
+      <option value="other">Printing Textile</option>
+      <option value="other">Automobile</option>
+    </select><br>
+    
+    <label for="semester">Semester:</label>
+    <input type="number" id="semester" name="semester" min="1" max="6" required><br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" name="Male" >Male<br>
+    <input type="radio" name="Female" >Female<br>
+    <input type="radio" name="Other" >Other<br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="email">Re-type Password:</label>
+    <input type="password" id="repass" name="repass" required><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
